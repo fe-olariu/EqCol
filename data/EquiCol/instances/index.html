@@ -1,0 +1,1646 @@
+<!-- DO NOT EDIT index.pre MANUALLY - EDIT head.pre INSTEAD -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>
+Chris Walshaw
+:: Research :: Partition Archive
+</title>
+  <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<!--
+  <meta http-equiv="Page-Enter" content="blendTrans(Duration=0.5)">
+  <meta http-equiv="Page-Exit" content="blendTrans(Duration=0.5)">
+  <meta http-equiv="Site-Enter" content="blendTrans(Duration=0.5)">
+-->
+  <meta name="verify-v1" content="B631OpTUWqBF1a/mfCi+QqPQAlzyyzrIi+NpJnk0m9s=">
+
+<link rel="stylesheet" href="/css/chwstyle.css" type="text/css">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<script type="text/JavaScript" src="/js/chwjavascript.js"></script>
+
+</head>
+
+<body>
+<table cellpadding=10>
+<tr valign=top align=left>
+<td valign=top>
+<table>
+
+<tr><td><table border=5 cellpadding=2 width=175>
+
+<tr><td bgcolor="#669933" valign="top" align="left">&nbsp;<b><a class="white" href="/">Chris Walshaw</a></b></td></tr>
+
+</table></td></tr><tr><td><table border=5 cellpadding=2 width=175>
+
+<tr><td bgcolor="#99CC33" valign="top" align="left">&nbsp;<b><a class="white" href="/teaching/">Teaching</a></b></td></tr>
+
+</table></td></tr><tr><td><table border=5 cellpadding=2 width=175>
+
+<tr><td bgcolor="#99CC33" valign="top" align="left">&nbsp;<b><a class="white" href="/research/">Research</a></b></td></tr>
+
+</table></td></tr><tr><td><table border=2 width=175>
+
+<tr><td bgcolor="#999933" valign="top" align="left"><small>&nbsp;<a class="white" href="/jostle/">&ndash; JOSTLE</a></small></td></tr>
+
+</table></td></tr><tr><td><table border=2 width=175>
+
+<tr><td bgcolor="#999933" valign="top" align="left"><small>&nbsp;<a class="white" href="/focusware/">&ndash; NetWorks</a></small></td></tr>
+
+</table></td></tr><tr><td><table border=2 width=175>
+
+<tr><td bgcolor="#CCCC33" valign="top" align="left"><small>&nbsp;<a class="white" href="/partition/">&ndash; partition archive</a></small></td></tr>
+
+</table></td></tr><tr><td><table border=2 width=175>
+
+<tr><td bgcolor="#CCCC66" valign="top" align="left"><small>&nbsp;<a class="white" href="/papers/">&ndash; publications</a></small></td></tr>
+
+</table></td></tr><tr><td><table border=5 cellpadding=2 width=175>
+
+<tr><td bgcolor="#99CC33" valign="top" align="left">&nbsp;<b><a class="white" href="/music/">Music</a></b></td></tr>
+
+</table></td></tr><tr><td><table border=5 cellpadding=2 width=175>
+
+<tr><td bgcolor="#99CC66" valign="top" align="left">&nbsp;<b><a class="white" href="/contact.html">Contact</a></b></td></tr>
+
+</table></td></tr>
+
+</table>
+</td>
+<td bgcolor="#FFFFFF" valign=top align=left>
+<h2>The Graph Partitioning Archive <small>
+(last updated Nov 2 2020)
+</small></h2>
+
+<!--
+<hr>
+<p><big><b>NEWS (Aug 2016):
+The new home for the Graph Partitioning Archive is here <a href="http://chriswalshaw.co.uk/partition/">http://chriswalshaw.co.uk/partition/</a>. The graph and partition files are no longer available to download individually but see the <a href="#downloads">Downloads</a> section for information on how to get them.
+The data for the Graph Partitioning Archive is currently OFFLINE. The results are listed below but none of the local links to the partitions and graphs will work.
+<br><br>
+Also it is very likely that the archive will have to move to another server. Please check back to <a href="http://chriswalshaw.co.uk/partition/">http://chriswalshaw.co.uk/partition/</a> for updates.
+<a href="http://www.cc.gatech.edu/dimacs10/">The Tenth DIMACS Implementation Challenge: Graph Partitioning and Graph Clustering</a> has now finished.
+The Challenge book was published in 2013.
+The deadline for <a href="http://www.cc.gatech.edu/dimacs10/data/call-for-papers.pdf">submitting papers</a> is October 21, 2011.
+</b></big></p>
+<hr>
+-->
+
+<table cellSpacing=0 cellPadding=10 align=right border=0>
+  <tr>
+    <td align=center>
+      <a href="https://www.mdpi.com/journal/algorithms/special_issues/Multilevel_Refinement">
+      <img border=0 src="../research/Multilevel_Refinement_vertical_light.png" alt="Algorithms - special issue on Multilevel Refinement for Combinatorial Optimisation and Complex Networks">
+      </a>
+    </td>
+  </tr>
+</table>
+
+Welcome to the Graph Partitioning Archive.
+Originally hosted at the University of Greenwich and moved to <a href="http://chriswalshaw.co.uk/partition">http://chriswalshaw.co.uk/partition</a> in July 2016 when the University server was switched off, the archive consists of the best partitions found to date for a range of graphs and its aim is to provide a benchmark, against which partitioning algorithms can be tested, and a resource for experimentation.
+<p>
+The partition archive has been in operation since the year 2000 and includes results from most of the major graph partitioning software packages.
+Furthermore, researchers developing experimental partitioning algorithms regularly submit new partitions for possible inclusion.
+The software that has been used to produce partitions for the archive is listed <a href="#software">below</a>.
+<p>
+Most of the test graphs arise from typical partitioning applications, although the archive also includes results computed for a <b>graph-colouring test suite</b> [<a href="#WalshawAoOR04">Wal04</a>] contained in a separate <b><a href="./index-colour.html">annexe</a></b>.
+<p>
+The archive was originally set up as part of a research project into very high quality partitions and authors wishing to refer to the partitioning archive should cite the paper [<a href="#SoperJoGO04">SWC04</a>].
+
+<p>
+<b>Acknowledgements:</b>
+Initially the archive was set up using public domain software from a number of researchers including Bruce Hendrickson &amp; Robert Leland (Sandia National Labs, USA), George Karypis &amp; Vipin Kumar (Univ. Minnesota) and Stephen Barnard &amp; Horst Simon (Cray Research Inc. / NASA Ames).
+</p>
+
+<p>
+Subsequently, many researchers have submitted partitions including S. Popinet (NIWA Science, New Zealand); A. Kozhushkin (Program Systems Inst., Russia); R. Banos &amp; C. Gil (Univ. Almeria, Spain); S. Wishko, A. Brandt &amp; D. Ron (Weizmann Inst. Science, Israel); K. Lang &amp; S. Rao (Yahoo! Research, USA); F. Comellas &amp; E. Sapena (Univ. Pol. Catalunya, Spain); J. K. Martinsen &amp; X.Cai (Univ. Oslo, Norway); J. Martin (Trinity College Dublin, Ireland); P. Chardaire, M. Barake &amp; G. P. McKeown (Univ. East Anglia, UK); C.-E. Bichot (ENAC, Toulouse, France); H. Meyerhenke (Univ. Paderborn, Germany); C. Schulz (Univ. Karlsruhe, Germany); Mattias Hein (Univ. Saarland, Germany); Dale Wong; Ilya Safro (Argonne National Lab, USA); Jin-Kao Hao (Univ. Angers, France); Frank Schneider (Inform Software); Bruno Menegola (Federal Univ. Rio Grande do Sul, Brazil); Emmanuel Romero Ruiz &amp; Carlos Segura Gonz&aacute;lez (Center for Research in Mathematics, Guanajuato, Mexico).
+</p>
+
+<hr>
+<h3>Contents</h3>
+<ul>
+  <li><a href="#definition">Problem definition</a></li>
+  <li><a href="#submissions">Submissions</a></li>
+  <li><a href="#partitions">Archived partitions</a></li>
+  <li><a href="#downloads">Downloads</a></li>
+  <li><a href="#software">Software</a></li>
+  <li><a href="#references">References</a></li>
+  <li><a href="#graphs">Test graphs</a></li>
+  <li><a href="#0">Results with 0% imbalance</a></li>
+  <li><a href="#1">Results with up to 1% imbalance</a></li>
+  <li><a href="#3">Results with up to 3% imbalance</a></li>
+  <li><a href="#5">Results with up to 5% imbalance</a></li>
+  <li><a href="index-colour.html">Colouring annexe</a></li>
+</ul>
+
+<hr>
+
+<a name="definition"></a><h3>Problem definition</h3>
+
+Let <i>G = G(V,E)</i> be an undirected graph of vertices <i>V</i>, with edges <i>E</i>.
+We assume that both vertices and edges can be weighted and that |<i>v</i>| denotes the weight of a vertex <i>v</i> and similarly for edges and sets of vertices and edges.
+However, it is often the case that vertices and edges are given unit weights, |<i>v</i>|=1 for all <i>v</i> in <i>V</i> and |<i>e</i>|=1 for all <i>e</i> in <i>E</i> and indeed so far this is true for all of the example graphs.
+A partition of the graph is a mapping of <i>V</i> into <i>P</i> disjoint subdomains <i>S_p</i> such that the union of <i>S_p = V</i>.
+The weight of a subdomain is just the sum of the weights of the vertices in the subdomain, |<i>S_p</i>| = sum |<i>v</i>| and the set of inter-subdomain or cut edges (i.e. edges cut by the partition) is denoted by <i>E_c</i>.
+<p>
+
+The usual objective of graph partitioning is to find a partition which evenly balances the vertex weight in each subdomain whilst minimising the total weight of cut edges or cut-weight, |<i>E_c</i>|.
+To evenly balance the vertex weight, the optimal subdomain weight is given by <i>S_opt</i> := ceil(|<i>V</i>|/<i>P</i>) (where the ceiling function <i>ceil(x)</i> returns the smallest integer greater than <i>x</i>).
+The graph partitioning problem can then be specified as: find a partition of <i>G</i> such that |<i>E_c</i>| is minimised subject to the constraint that |<i>S_p</i>| <= <i>S_opt</i>.
+<p>
+
+In fact it has been noted for some time that partition quality can often be improved if a certain amount of imbalance is allowed, [<a href="#SimonSJSC97">ST97</a>].
+The imbalance is defined as the maximum subdomain weight, <i>S&#39;</i> = max |<i>S_p</i>|, divided by the optimal, <i>S_opt</i>.
+If we allow <i>x</i>% imbalance then the partitioning problem becomes: find a partition of <i>G</i> such that |<i>E_c</i>| is minimised subject to the constraint that |<i>S_p</i>| <= <i>S_opt.(100+x)/100</i>.
+<p>
+
+The graph partitioning problem arises in many applications such as VLSI circuit design, data mining and parallel computing.
+In the latter case the subdomains are mapped to processors and the cut-weight then approximates the total communication volume.
+However, there is some discussion about whether this is the most appropriate metric for partitioning, e.g. [<a href="#HendricksonPCmp00">HK00</a>], and indeed it is unlikely that any one metric is appropriate.
+Currently in the archive, the quality of partitions is determined by cut-weight, however, there is no reason why it should not be extended to incorporate partitions which minimise different cost functions.
+
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="submissions"></a><h3>Submissions</h3>
+
+<p class=listhead>
+The archive welcomes submissions of partition files.
+Submitted partition files will be validated and added to the archive if they improve on a particular result.
+In this context improvement is:
+<ul>
+<li>having a lower cut-weight than the exisiting result whilst not exceeding the maximum subdomain weight; or
+<li>having the same cut-weight as an exisiting result but a smaller maximum subdomain weight; or
+<li>being a new result.
+</ul>
+Files for submission should be made available on a web site or ftp site and a mail message indicating their presence sent to
+<script language="JavaScript" type="text/javascript">
+var email=writemail('c.walshaw', 'gre.ac', 'uk', '')
+document.write(email)
+</script>.
+If this is not possible the files may be mailed directly.
+<p>
+If there are several files to be submitted (more than 10) it is simplest if they are packaged up into a single file.
+<p>
+The files should conform to this archive&#39;s partition file naming convention and format:
+<ul>
+<li>The partition file naming convention is [graph name].[P].ptn, where <i>P</i> is the number of subdomains.
+<li>The format of the partition file is a list of |<i>V</i>| integers <i>{p}</i>, one per line, with <i>0 <= p < P</i> and each integer, <i>p</i>, denotes the subdomain to which the corresponding vertex has been assigned (e.g. if the integer on line 200 of the file is 0 then, assuming vertex numbering starts at one, vertex number 200 is in subdomain 0).
+</ul>
+<p>
+The easiest way for me to deal with them is if all the 0% results are put in a directory called 0, all the 1% results in a directory called 1, etc, and then all the directories compiled into a .tar.gz or .zip file.
+<p>
+Submitted files should also include some indication of how the partition was derived which, if a public domain software package, may be subject to verification.
+The archive reserves the right not to accepted submitted files (either for reasons of disk space or for other unspecified reasons).
+<p>
+<b>Please note that updating the website with new partitions is not a high priority and so it make take a couple of months before I get a chance to do so. However, updates are always added in chronological order.</b>
+
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="partitions"></a><h3>Archived partitions</h3>
+The best partitions found to date are listed in 4 tables corresponding to <a href="#0">0% imbalance</a> (perfect balance), <a href="#1">1% imbalance</a>, <a href="#3">3% imbalance</a> and <a href="#5">5% imbalance</a>.
+For each graph, partitions into 2, 4, 8, 16, 32 and 64 subdomains are given and have the format
+<table align=center border><tr><td>C (S&#39;) [M]</td></table>
+where C is the cut-weight, S&#39; is the weight of the largest subdomain and M is the method/software that produced the partition.
+The cut-weight also provides a link to the partition file (format as described above).
+
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="downloads"></a><h3>Downloads</h3>
+<b>
+The graphs and partitions are no longer available to download directly from this page. Instead
+<script language="JavaScript" type="text/javascript">
+document.write(writemail('c.walshaw', 'gre.ac', 'uk', 'email me'))
+</script>
+and I will send you a link for a Google Drive page where you may download them easily in four zip files.
+</b>
+It's also helpful, but not essential, if you can let me know which University or company you work or study at so I can get a sense of how widely used the archive is in academia and industry.
+
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="software"></a><h3>Software</h3>
+
+The software that produced the partitions is denoted as follows (listed more or less chronologically in the order that software was first developed and the results added to the archive)
+<table border>
+<tr><th>Abbreviation</th><th>Software</th><th>Reference</th></tr>
+<tr><td>Grdy</td><td>Farhat&#39;s Greedy algorithm (as implemented within JOSTLE)</td><td>[<a href="#FarhatCaSt88">F88</a>]</td></tr>
+<tr><td>RCB</td><td>Recursive Coordinate Bisection (as implemented within JOSTLE)</td><td>[<a href="#SimonCSiE91">S91</a>]</td></tr>
+<tr><td>MRSB</td><td>Barnard & Simon&#39;s Multilevel Recursive Spectral Bisection</td><td>[<a href="#BarnardCPaE94">BS94</a>]</td></tr>
+<tr><td>Ch2.0</td><td><a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/softwre.cfm?sw=36">CHACO</a> - multilevel Kernighan-Lin (recursive bisection); version 2.0 (October 1995)<td>[<a href="#HendricksonSC95">HL95</a>]</td></tr>
+<tr><td>pM4.0</td><td>p-METIS - multilevel Kernighan-Lin (recursive bisection); available as part of <a href="http://glaros.dtc.umn.edu/gkhome/views/metis/">METIS</a> version 4.0 (September 1998)<td>[<a href="#KarypisSJSC98">KK98a</a>]</td></tr>
+<tr><td>kM4.0</td><td>k-METIS - multilevel Kernighan-Lin (k-way); available as part of <a href="http://glaros.dtc.umn.edu/gkhome/views/metis/">METIS</a> version 4.0 (September 1998)<td>[<a href="#KarypisJPDC98">KK98b</a>]</td></tr>
+<tr><td>GTS</td><td>Stephane Popinet&#39;s multilevel implementation available as part of the <a href="http://gts.sourceforge.net">GNU Triangulated Surface Library</a><td>-</td></tr>
+<tr><td>J2.2</td><td><a href="../jostle/">JOSTLE</a> - multilevel Kernighan-Lin (k-way); version 2.2 (March 2000)<td>[<a href="#WalshawSJSC00">WC00</a>]</td></tr>
+<tr><td>iJ</td><td>iterated JOSTLE - iterated multilevel Kernighan-Lin (k-way)</td><td>[<a href="#WalshawAoOR04">W04</a>]</td></tr>
+<tr><td>JE</td><td>JOSTLE Evolutionary - combined evolutionary/multilevel scheme</td><td>[<a href="#SoperJoGO04">SWC04</a>]</td></tr>
+<tr><td>GrPart</td><td>Alexander Kozhushkin&#39;s implementation of iterative multilevel Kernighan-Lin</td><td>-</td></tr>
+<tr><td>MLSATS</td><td><!--<a href="http://www.ace.ual.es/~cgil/grafos/Graph_Partitioning.html">-->MultiLevel refinated Mixed Simulated Annealing and Tabu Search<!--</a>--></td><td>[<a href="#BanosECCO03">BGOM03</a>]</td></tr>
+<tr><td>AMG</td><td>A bisection algorithm based on classical Algebraic MultiGrid from S. Wishko, A. Brandt and D. Ron</td><td>-</td></tr>
+<tr><td>MQI</td><td><a href="http://research.yahoo.com/~langk/">Max-flow Quotient-cut Improvement</a>, a bisection algorithm from K. Lang & S. Rao, which uses many multiple tries and improves an initial partition provided by METIS</td><td>[<a href="#LangIPCO04">LR04</a>]</td></tr>
+<tr><td>SDP</td><td>A semi-definite programming approach together with a max-flow algorithm from <a href="http://research.yahoo.com/~langk/">K. Lang</a> & S. Rao</td><td>-</td></tr>
+<tr><td>mpM4.0</td><td>Multiple runs (6561) of a randomised version of p-Metis; results provided by <a href="http://research.yahoo.com/~langk/">K. Lang</a> & S. Rao</td><td>-</td></tr>
+<tr><td>AES</td><td>ANTS, a multiagent algorithm, from Francesc Comellas & Emili Sapena</td><td>[<a href="#ComellasTR2105">CS05</a>]</td></tr>
+<tr><td>JKM</td><td>Some new matching heuristics from Jan Kasper Martinsen & Xing Cai</td><td>-</td></tr>
+<tr><td>GCSVD</td><td><!--<a href="http://www.cs.tcd.ie/Jacob.Martin/GeneCorrelation.pdf">-->Gene Correlation with Singular Value Decomposition<!--</a>--> from <!--<a href="http://www.cs.tcd.ie/Jacob.Martin/">-->Jacob Martin<!--</a>--></td><td>[<a href="#MartinGECC05">M05</a>]</td></tr>
+<tr><td>PROBE</td><td><a href="http://www.cmp.uea.ac.uk/~pc/gbprevised2col.pdf">A PROBE based heuristic</a> from <a href="http://www.cmp.uea.ac.uk/people/faculty/pc">P. Chardaire</a>, M. Barake, and G. P. McKeown</td><td>[<a href="#Chardaire07">CBM07</a>]</td></tr>
+<tr><td>FF</td><td>Fusion Fission from <a href="http://www.recherche.enac.fr/~bichot/">Charles-Edmond Bichot</a></td><td>-</td></tr>
+<tr><td>NW</td><td><a href="http://staffweb.cms.gre.ac.uk/~c.walshaw/focusware/">NetWorks</a> - a commercialised version of JOSTLE</td><td>-</td></tr>
+<tr><td>DiBaP</td><td><a href="http://wwwcs.uni-paderborn.de/cs/henningm/graph.html">Diffusion-Based Partitioning</a> - a shape-optimising approach from Henning Meyerhenke, Stefan Schamberger, Burkhard Monien and Thomas Sauerwald</td><td>[<a href="#MeyerhenkeIPDP08">MMS08</a>]</td></tr>
+<tr><td>DW</td><td>A confidential, commercial algorithm from Dale Wong</td><td>-</td></tr>
+<tr><td>KaPPa</td><td><a href="http://arxiv.org/pdf/0910.2004">KaPPa</a> - a new scalable high-quality multilevel partitioner from Manuel Holtgrewe, Peter Sanders and Christian Schulz</td><td>[<a href="#HoltgreweTR09">HSS09</a>]</td></tr>
+<tr><td>KasPar</td><td><a href="http://arxiv.org/abs/1004.4024">KasPar</a> - a new n-level multilevel partitioner from Vitaly Osipov and Peter Sanders</td><td>[<a href="#Osipov10">OS10</a>]</td></tr>
+<tr><td><a name="KaFFPa"></a>KaFFPa</td><td><a href="http://arxiv.org/abs/1012.0006">KaFFPa</a> - Karlsruhe Fast Flow Partitioner from Christian Schulz and Peter Sanders</td><td>[<a href="#Sanders10">SS10</a>]</td></tr>
+<tr><td>IPMNE</td><td><a href="http://arxiv.org/abs/1012.0774">IPMNE</a> - Inverse Power Method for Nonlinear Eigenproblems from Matthias Hein and Thomas B&uuml;hler</td><td>[<a href="#Hein10">HB10</a>]</td></tr>
+<tr><td>*+KFFP</td><td><a href="http://arxiv.org/abs/1012.0006">*+KFFP</a> - uses <a href="#KaFFPa">KaFFPa</a> from Christian Schulz and Peter Sanders to improve on existing results downloaded from this archive (including those already computed by KaFFPa)</td><td>[<a href="#Sanders10">SS10</a>]</td></tr>
+<tr><td>RCMGO</td><td>Relaxation-based coarsening and multiscale graph organization from D. Ron, I. Safro &amp; A. Brandt</td><td>[<a href="#Ron11">RSB11</a>]</td></tr>
+<tr><td>MMA01</td><td>Initial version of a Multilevel Memetic Algorithm from Una Benlic &amp; Jin-Kao Hao</td><td>[<a href="#BenlicITAI10">BH10</a>]</td></tr>
+<tr><td>MMA02</td><td>Improved version of a Multilevel Memetic Algorithm from Una Benlic &amp; Jin-Kao Hao</td><td>[<a href="#BenlicITEC11">BH11a</a>]</td></tr>
+<tr><td>MTSA</td><td>A Multilevel Tabu Search Algorithm from Una Benlic &amp; Jin-Kao Hao</td><td>[<a href="#BenlicCaOR11">BH11b</a>]</td></tr>
+<tr><td><a name="IPMNE2"></a>IPMNE2</td><td><!--<a href="??">-->IPMNE2<!--</a>--> - a generalisation of the Inverse Power Method for Nonlinear Eigenproblems from Matthias Hein and Simon Setzer</td><td>[<a href="#Hein11">HS11</a>]</td></tr>
+<tr><td>*+IPMNE2</td><td><!--<a href="??">-->*+IPMNE2<!--</a>--> - uses <a href="#IPMNE2">IPMNE2</a> from Matthias Hein and Simon Setzer to improve on existing results downloaded from this archive</td><td>[<a href="#Hein11">HS11</a>]</td></tr>
+<tr><td>N/A</td><td>not available/recorded (probably JOSTLE Evolutionary)</td><td>-</td></tr>
+<tr><td><a name="KaFFPaE"></a>KaFFPaE</td><td><a href="http://arxiv.org/abs/1110.0477">KaFFPaE</a> - Karlsruhe Fast Flow Partitioner Evolutionary from Christian Schulz and Peter Sanders</td><td>[<a href="#Sanders11">SS11</a>]</td></tr>
+<tr><td><a name="FSMAGP"></a>FSMAGP</td><td>An implementation of MAGP from Frank Schneider</td><td>-</td></tr>
+<tr><td><a name="KaBaPE"></a>KaBaPE</td><td><a href="http://arxiv.org/pdf/1210.0477v1.pdf">KaBaPE</a> - Karlsruhe Balanced Partitioner Evolutionary from Christian Schulz and Peter Sanders</td><td>[<a href="#Sanders12">SS12</a>]</td></tr>
+<tr><td><a name="HYPAL"></a>HYPAL</td><td>HYbrid k-way graph Partitioning ALgorithm from Bruno Menegola and Marcus Ritt (Federal University of Rio Grande do Sul, Brazil) - a hybrid GRASP with path-relinking and the multilevel algorithm of Osipov and Sanders (2010)</td><td>-</td></tr>
+<tr><td><a name="KaBaPET"></a>KaBaPET</td><td>Karlsruhe Balanced Partitioner Evolutionary incorporating Tabu search and the combine operator of MGAP from Christian Schulz and Peter Sanders</td><td>[<a href="#Sanders13">SS13</a>]</td></tr>
+<tr><td><a name="MAHMBCDP"></a>MAHMBCDP</td><td>Memetic Algorithm with Hungarian Matching Based Crossover and Diversity Preservation from Emmanuel Romero Ruiz &amp; Carlos Segura Gonz&aacute;lez (Center for Research in Mathematics, Guanajuato, Mexico)</td><td>[<a href="#RomeroRuizCySi18">RR18</a>]</td></tr>
+<tr><td>*+ILP</td><td>Uses an ILP solver from Alexandra Henzinger, Alexander Noe &amp; Christian Schulz to improve on existing results downloaded from this archive</td><td>[<a href="#Henzinger18">HNS18</a>]</td></tr>
+<tr><td>KaBaPE+ILP</td><td>Uses an ILP solver from Alexandra Henzinger, Alexander Noe &amp; Christian Schulz to improve on Karlsruhe Balanced Partitioner Evolutionary results</td><td>[<a href="#Henzinger18">HNS18</a>]</td></tr>
+<tr><td>KaHyPar-E</td><td><a href="https://www.kahypar.org/">Karlsruhe Hypergraph Partitioning - Evolutionary</a> - from Robin Andre, Sebastian Schlag &amp; Christian Schulz</td><td>[<a href="#AndreGECC18">ASS18</a>]</td></tr>
+</table>
+
+Note that a certain amount of care needs to be taken with the attribution of a result to a particular method.
+For example the finan512 graph with P = 4 is attributed to CHACO 2.0 although an equivalent quality partition was also found by p-METIS, k-METIS, JOSTLE 2.2, JOSTLE Evolutionary, iterated JOSTLE and NetWorks (and probably many other methods).
+Attribution is thus given to the earliest method which found it but does not imply that an equivalent quality partition has not been found by a more recent method.
+The results were added into the archive in the order shown in the table (which is approximately the order in which the methods and software were developed).
+Furthermore, no account is taken of runtime in these tables; some of these codes may have taken many days to compute and evaluate multiple solutions, before arriving at the partitions shown, whilst others complete in fractions of a second.
+
+<p class=listhead>
+Notes:
+<ul>
+
+<li> CHACO was run using the multilevel KL method with recursive bisection and a coarsening threshold of 200.
+
+<li> JOSTLE was run with the imbalance threshold set to 0%, 1%, 3% (default) and 5% (i.e. 4 different tests for each graph and value of P).
+
+<li> JOSTLE Evolutionary (JE) was run with the imbalance threshold set to 0% and 3% (i.e. 2 different tests for each graph and value of P).
+It was only tested in full on a subset of the graphs (add20, 3elt, uk, add32, whitaker3, crack, wing_nodal, fe_4elt2, vibrobox, 4elt, fe_sphere, cti, memplus, cs4, fe_pwt, bcsstk32, t60k, wing, brack2) although occasional JE attributions may be found for other graphs.
+
+</ul>
+
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="references"></a><h3>References</h3>
+
+<DL COMPACT>
+<P>
+<DT><A NAME="AndreGECC18"><STRONG>ASS18</STRONG></A><DD>
+Robin&nbsp;Andre, Sebastian&nbsp;Schlag and Christian&nbsp;Schulz.
+<A HREF="https://dl.acm.org/doi/10.1145/3205455.3205475">Memetic multilevel hypergraph partitioning</A>.
+In <EM>GECCO&#39;18: Proc. Genetic &amp; Evolutionary Computation Conf.</EM>, pages 347-354, 2018.
+<P>
+<DT><A NAME="BanosECCO03"><STRONG>BGOM03</STRONG></A><DD>
+R.&nbsp;Banos, C.&nbsp;Gil, J.&nbsp;Ortega and F.&nbsp;G. Montoya.
+Multilevel Heuristic Algorithm for Graph Partitioning.
+In <EM>3rd European Workshop on Evolutionary Computation in Combinatorial Optimization</EM>, volume 2611 of <EM>LNCS</EM>, pages 143-153, Springer, Berlin, 2003.
+<P>
+<DT><A NAME="BenlicITAI10"><STRONG>BH10</STRONG></A><DD>
+U.&nbsp;Benlic and J.-K.&nbsp;Hao.
+An Effective Multilevel Memetic Algorithm for Balanced Graph Partitioning.
+In <EM>Proc. 22nd IEEE Intl Conf. Tools with Artificial Intelligence</EM>, pages 121-128, 2010.
+<P>
+<DT><A NAME="BenlicITEC11"><STRONG>BH11a</STRONG></A><DD>
+U.&nbsp;Benlic and J.-K.&nbsp;Hao.
+A Multilevel Memetic Approach for Improving Graph k-Partitions.
+<EM>IEEE Trans. Evolutionary Computation</EM>, 15(5):624-642, 2011.
+<P>
+<DT><A NAME="BenlicCaOR11"><STRONG>BH11b</STRONG></A><DD>
+U.&nbsp;Benlic and J.-K.&nbsp;Hao.
+An Effective Multilevel Tabu Search Approach for Balanced Graph Partitioning.
+<EM>Comput. Oper. Res.</EM>, 38(7):1066-1075, 2011.
+<P>
+<DT><A NAME="BarnardCPaE94"><STRONG>BS94</STRONG></A><DD>
+S.&nbsp;T. Barnard and H.&nbsp;D. Simon.
+A Fast Multilevel Implementation of Recursive Spectral Bisection for Partitioning Unstructured Problems.
+<EM>Concurrency: Practice &amp; Experience</EM>, 6(2):101-117, 1994.
+<P>
+<DT><A NAME="Chardaire07"><STRONG>CBM07</STRONG></A><DD>
+P.&nbsp;Chardaire, M.&nbsp;Barake and G.&nbsp;P. McKeown.
+A PROBE based heuristic for Graph Partitioning.
+<EM>IEEE Trans. Comp.</EM>, 56(12):1707-1720, 2007.
+<P>
+<DT><A NAME="ComellasTR2105"><STRONG>CS05</STRONG></A><DD>
+F.&nbsp;Comellas and E.&nbsp;Sapena.
+A multiagent algorithm for graph partitioning.
+Tech. Rep. UPC-MA4-2005-05C-21, Univ. Polit&#232;cnica de Catalunya, 2005.
+<P>
+<DT><A NAME="FarhatCaSt88"><STRONG>F88</STRONG></A><DD>
+C.&nbsp;Farhat.
+A Simple and Efficient Automatic FEM Domain Decomposer.
+<EM>Comput. &amp; Structures</EM>, 28(5):579-602, 1988.
+<P>
+<DT><A NAME="Hein10"><STRONG>HB10</STRONG></A><DD>
+M.&nbsp;Hein and T.&nbsp;B&#252;hler.
+An Inverse Power Method for Nonlinear Eigenproblems with Applications in 1-Spectral Clustering and Sparse PCA.
+Machine Learning Group, Saarland Univ., 2010.
+<P>
+<DT><A NAME="HendricksonPCmp00"><STRONG>HK00</STRONG></A><DD>
+B.&nbsp;Hendrickson and T.&nbsp;G. Kolda.
+Graph Partitioning Models for Parallel Computing.
+<EM>Parallel Comput.</EM>, 26(12):1519-1534, 2000.
+<P>
+<DT><A NAME="HendricksonSC95"><STRONG>HL95</STRONG></A><DD>
+B.&nbsp;Hendrickson and R.&nbsp;Leland.
+A Multilevel Algorithm for Partitioning Graphs.
+In S.&nbsp;Karin, editor, <EM>Proc. Supercomputing &#39;95, San Diego (CD-ROM)</EM>, ACM Press, New York, 1995.
+<P>
+<DT><A NAME="Henzinger18"><STRONG>HNS18</STRONG></A><DD>
+A.&nbsp;Henzinger, A.&nbsp;Noe and C.&nbsp;Schulz.
+<A HREF="https://arxiv.org/pdf/1802.07144.pdf">ILP-based Local Search for Graph Partitioning</A>.
+Tech. Rep., 2018.
+<P>
+<DT><A NAME="Hein11"><STRONG>HS11</STRONG></A><DD>
+M.&nbsp;Hein and S.&nbsp;Setzer.
+Beyond Spectral Clustering - Tight Relaxations of Balanced Graph Cuts.
+In <EM>NIPS&#39;11: Proc. 24th Intl Conf. Neural Information Processing</EM>, pages 2366-2374, 2011.
+<P>
+<DT><A NAME="HoltgreweTR09"><STRONG>HSS09</STRONG></A><DD>
+M.&nbsp;Holtgrewe, P.&nbsp;Sanders and C.&nbsp;Schulz.
+Engineering a Scalable High Quality Graph Partitioner.
+Tech. Rep., 2009.
+<P>
+<DT><A NAME="KarypisSJSC98"><STRONG>KK98a</STRONG></A><DD>
+G.&nbsp;Karypis and V.&nbsp;Kumar.
+A Fast and High Quality Multilevel Scheme for Partitioning Irregular Graphs.
+<EM>SIAM J. Sci. Comput.</EM>, 20(1):359-392, 1998.
+<P>
+<DT><A NAME="KarypisJPDC98"><STRONG>KK98b</STRONG></A><DD>
+G.&nbsp;Karypis and V.&nbsp;Kumar.
+Multilevel <I>k</I>-way Partitioning Scheme for Irregular Graphs.
+<EM>J. Parallel Distrib. Comput.</EM>, 48(1):96-129, 1998.
+<P>
+<DT><A NAME="LangIPCO04"><STRONG>LR04</STRONG></A><DD>
+K.&nbsp;Lang and S.&nbsp;Rao.
+A flow-based method for improving the expansion or conductance of graph cuts.
+2004.
+<P>
+<DT><A NAME="MartinGECC05"><STRONG>M05</STRONG></A><DD>
+J.&nbsp;Martin.
+Subproblem Optimization by Gene Correlation with Singular Value Decomposition.
+In <EM>Proc. Genetic &amp; Evolutionary Comput. Conf. (GECCO-2005)</EM>, ACM, 2005.
+<P>
+<DT><A NAME="MeyerhenkeIPDP08"><STRONG>MMS08</STRONG></A><DD>
+H.&nbsp;Meyerhenke, B.&nbsp;Monien and T.&nbsp;Sauerwald.
+A New Diffusion-based Multilevel Algorithm for Computing Graph Partitions of Very High Quality.
+In <EM>Proc. 22nd IEEE Intl. Parallel &amp; Distributed Processing Symp. (IPDPS&#39;08)</EM>, 2008.
+<P>
+<DT><A NAME="Osipov10"><STRONG>OS10</STRONG></A><DD>
+V.&nbsp;Osipov and P.&nbsp;Sanders.
+n-Level Graph Partitioning.
+Inst. Theoretische Informatik, Univ. Karlsruhe, 2010.
+<P>
+<DT><A NAME="RomeroRuizCySi18"><STRONG>RS18</STRONG></A><DD>
+Emmanuel&nbsp;Romero&nbsp;Ruiz and Carlos&nbsp;Segura.
+<A HREF="https://www.cys.cic.ipn.mx/ojs/index.php/CyS/article/view/2951/2460">Memetic Algorithm with Hungarian Matching Based Crossover and Diversity Preservation</A>.
+<EM>Computaci&#243;n y Sistemas</EM>, 22(2):347-361, 2018.
+<P>
+<DT><A NAME="Ron11"><STRONG>RSB11</STRONG></A><DD>
+D.&nbsp;Ron, I.&nbsp;Safro and A.&nbsp;Brandt.
+Relaxation-based coarsening and multiscale graph organization.
+<EM>SIAM J. Multiscale Modeling Simulations</EM>, 9:407-423, 2011.
+<P>
+<DT><A NAME="SimonCSiE91"><STRONG>S91</STRONG></A><DD>
+H.&nbsp;D. Simon.
+Partitioning of Unstructured Problems for Parallel Processing.
+<EM>Computing Systems Engrg.</EM>, 2:135-148, 1991.
+<P>
+<DT><A NAME="Sanders10"><STRONG>SS10</STRONG></A><DD>
+P.&nbsp;Sanders and C.&nbsp;Schulz.
+Engineering Multilevel Graph Partitioning Algorithms.
+Inst. Theoretische Informatik, Univ. Karlsruhe, 2010.
+<P>
+<DT><A NAME="Sanders11"><STRONG>SS11</STRONG></A><DD>
+P.&nbsp;Sanders and C.&nbsp;Schulz.
+Distributed Evolutionary Graph Partitioning.
+Inst. Theoretische Informatik, Univ. Karlsruhe, 2011.
+<P>
+<DT><A NAME="Sanders12"><STRONG>SS12</STRONG></A><DD>
+P.&nbsp;Sanders and C.&nbsp;Schulz.
+Think Locally, Act Globally: Perfectly Balanced Graph Partitioning.
+Inst. Theoretische Informatik, Univ. Karlsruhe, 2012.
+<P>
+<DT><A NAME="Sanders13"><STRONG>SS13</STRONG></A><DD>
+P.&nbsp;Sanders and C.&nbsp;Schulz.
+Think Locally, Act Globally: Highly Balanced Graph Partitioning.
+In <EM>Experimental Algorithms</EM>, volume 7933 of <EM>LNCS</EM>, pages 164-175, Springer, Berlin, 2013.
+<P>
+<DT><A NAME="SimonSJSC97"><STRONG>ST97</STRONG></A><DD>
+H.&nbsp;D. Simon and S.-H.&nbsp;Teng.
+How Good is Recursive Bisection?
+<EM>SIAM J. Sci. Comput.</EM>, 18(5):1436-1445, 1997.
+<P>
+<DT><A NAME="SoperJoGO04"><STRONG>SWC04</STRONG></A><DD>
+A.&nbsp;J. Soper, C.&nbsp;Walshaw and M.&nbsp;Cross.
+<A HREF="../papers/fulltext/SoperJoGO04.pdf">A Combined Evolutionary Search and Multilevel Optimisation Approach to Graph Partitioning</A>.
+<EM>J. Global Optimization</EM>, 29(2):225-241, 2004.
+<P>
+<DT><A NAME="WalshawAoOR04"><STRONG>W04</STRONG></A><DD>
+C.&nbsp;Walshaw.
+<A HREF="../papers/fulltext/WalshawAoOR04.pdf">Multilevel Refinement for Combinatorial Optimisation Problems</A>.
+<EM>Annals Oper. Res.</EM>, 131:325-372, 2004.
+<P>
+<DT><A NAME="WalshawSJSC00"><STRONG>WC00</STRONG></A><DD>
+C.&nbsp;Walshaw and M.&nbsp;Cross.
+<A HREF="../papers/fulltext/WalshawSJSC00.pdf">Mesh Partitioning: a Multilevel Balancing and Refinement Algorithm</A>.
+<EM>SIAM J. Sci. Comput.</EM>, 22(1):63-80, 2000.
+<P>
+</DL>
+<p align=center><small><a href="#">Back to top</a></small></p>
+
+<hr>
+
+<a name="graphs"></a><h3>Test Graphs</h3>
+
+The test graphs are taken from various sources and listed in the table below.
+Graphs for which the original source is bracketted appear to be no longer available at that site.
+However all the graph files are also available from this site converted into a standard format.
+This format is the same as used by <a href="../jostle/">JOSTLE</a>, <a href="https://cfwebprod.sandia.gov/cfdocs/CompResearch/templates/insert/softwre.cfm?sw=36">CHACO</a> & <a href="http://glaros.dtc.umn.edu/gkhome/views/metis/">METIS</a> and is described in the JOSTLE <a href="../jostle/jostle-exe.pdf">userguide</a>.
+<p>
+
+<table border><tr><th>graph</th>
+<th>|V|</th>
+<th>|E|</th>
+<th>original / alternative source</th>
+<tr><td align=center><a href="index.html#downloads">add20</a></td>
+<td align=right>2395</td>
+<td align=right>7462</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Hamm/add20.html">www.cise.ufl.edu/research/sparse/matrices/Hamm/add20.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">data</a></td>
+<td align=right>2851</td>
+<td align=right>15093</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/data/data.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">3elt</a></td>
+<td align=right>4720</td>
+<td align=right>13722</td>
+<td align=left><small>(ftp://riacs.edu/pub/grids/3elt.grid.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">uk</a></td>
+<td align=right>4824</td>
+<td align=right>6837</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/uk/uk.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">add32</a></td>
+<td align=right>4960</td>
+<td align=right>9462</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Hamm/add32.html">www.cise.ufl.edu/research/sparse/matrices/Hamm/add32.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">bcsstk33</a></td>
+<td align=right>8738</td>
+<td align=right>291583</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk33.html">www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk33.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">whitaker3</a></td>
+<td align=right>9800</td>
+<td align=right>28989</td>
+<td align=left><small>(ftp://riacs.edu/pub/grids/whitaker3.grid.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">crack</a></td>
+<td align=right>10240</td>
+<td align=right>30380</td>
+<td align=left><small><a href="http://www2.cs.uni-paderborn.de/fachbereich/AG/monien/RESEARCH/PART/GRAPHS/FEM2.tar">www2.cs.uni-paderborn.de/fachbereich/AG/monien/RESEARCH/PART/GRAPHS/FEM2.tar</a></small></td>
+<tr><td align=center><a href="index.html#downloads">wing_nodal</a></td>
+<td align=right>10937</td>
+<td align=right>75488</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/wing_nodal/wing_nodal.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">fe_4elt2</a></td>
+<td align=right>11143</td>
+<td align=right>32818</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_4elt2.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_4elt2.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">vibrobox</a></td>
+<td align=right>12328</td>
+<td align=right>165250</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Cote/vibrobox.html">www.cise.ufl.edu/research/sparse/matrices/Cote/vibrobox.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">bcsstk29</a></td>
+<td align=right>13992</td>
+<td align=right>302748</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk29.html">www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk29.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">4elt</a></td>
+<td align=right>15606</td>
+<td align=right>45878</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Pothen/barth5.html">www.cise.ufl.edu/research/sparse/matrices/Pothen/barth5.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">fe_sphere</a></td>
+<td align=right>16386</td>
+<td align=right>49152</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_sphere.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_sphere.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">cti</a></td>
+<td align=right>16840</td>
+<td align=right>48232</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/cti/cti.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">memplus</a></td>
+<td align=right>17758</td>
+<td align=right>54196</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Hamm/memplus.html">www.cise.ufl.edu/research/sparse/matrices/Hamm/memplus.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">cs4</a></td>
+<td align=right>22499</td>
+<td align=right>43858</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/cs4/cs4.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">bcsstk30</a></td>
+<td align=right>28924</td>
+<td align=right>1007284</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk30.html">www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk30.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">bcsstk31</a></td>
+<td align=right>35588</td>
+<td align=right>572914</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk31.html">www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk31.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">fe_pwt</a></td>
+<td align=right>36519</td>
+<td align=right>144794</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_pwt.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_pwt.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">bcsstk32</a></td>
+<td align=right>44609</td>
+<td align=right>985046</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk32.html">www.cise.ufl.edu/research/sparse/matrices/HB/bcsstk32.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">fe_body</a></td>
+<td align=right>45087</td>
+<td align=right>163734</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_body.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_body.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">t60k</a></td>
+<td align=right>60005</td>
+<td align=right>89440</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/t60k/t60k.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">wing</a></td>
+<td align=right>62032</td>
+<td align=right>121544</td>
+<td align=left><small>(http://staffweb.cms.gre.ac.uk/~c.walshaw/partition/archive/wing/wing.graph)</small></td>
+<tr><td align=center><a href="index.html#downloads">brack2</a></td>
+<td align=right>62631</td>
+<td align=right>366559</td>
+<td align=left><small>(ftp://riacs.edu/pub/grids/brack2.grid.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">finan512</a></td>
+<td align=right>74752</td>
+<td align=right>261120</td>
+<td align=left><small><a href="http://www.cise.ufl.edu/research/sparse/matrices/Mulvey/finan512.html">www.cise.ufl.edu/research/sparse/matrices/Mulvey/finan512.html</a></small></td>
+<tr><td align=center><a href="index.html#downloads">fe_tooth</a></td>
+<td align=right>78136</td>
+<td align=right>452591</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_tooth.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_tooth.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">fe_rotor</a></td>
+<td align=right>99617</td>
+<td align=right>662431</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_rotor.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_rotor.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">598a</a></td>
+<td align=right>110971</td>
+<td align=right>741934</td>
+<td align=left><small>(ftp://ftp.cs.umn.edu/users/kumar/Graphs/598a.graph.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">fe_ocean</a></td>
+<td align=right>143437</td>
+<td align=right>409593</td>
+<td align=left><small><a href="http://wotug.org/parallel/libraries/communication/scotch/Graphs/fe_ocean.src.gz">wotug.org/parallel/libraries/communication/scotch/Graphs/fe_ocean.src.gz</a></small></td>
+<tr><td align=center><a href="index.html#downloads">144</a></td>
+<td align=right>144649</td>
+<td align=right>1074393</td>
+<td align=left><small>(ftp://ftp.cs.umn.edu/users/kumar/Graphs/144.graph.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">wave</a></td>
+<td align=right>156317</td>
+<td align=right>1059331</td>
+<td align=left><small>(ftp://riacs.edu/pub/grids/wave.grid.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">m14b</a></td>
+<td align=right>214765</td>
+<td align=right>1679018</td>
+<td align=left><small>(ftp://ftp.cs.umn.edu/users/kumar/Graphs/m14b.graph.gz)</small></td>
+<tr><td align=center><a href="index.html#downloads">auto</a></td>
+<td align=right>448695</td>
+<td align=right>3314611</td>
+<td align=left><small>(ftp://ftp.cs.umn.edu/users/kumar/Graphs/auto.graph.gz)</small></td>
+</table>
+<p align=center><small><a href=.>Back to top</a></small></p>
+<hr>
+<a name=0></a><h2>Results with up to 0% imbalance<br>
+S_max <= 1.00 x S_opt</h2>
+<table border><tr><th>graph</th>
+<th>2</th>
+<th>4</th>
+<th>8</th>
+<th>16</th>
+<th>32</th>
+<th>64</th>
+<tr><td align=center><a href="index.html#downloads">add20</a></td>
+<td align=center><a href="index.html#downloads">596</a> (1198) [PROBE]</td>
+<td align=center><a href="index.html#downloads">1151</a> (599) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">1678</a> (300) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2040</a> (150) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2356</a> (75) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2940</a> (38) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">data</a></td>
+<td align=center><a href="index.html#downloads">189</a> (1426) [PROBE]</td>
+<td align=center><a href="index.html#downloads">382</a> (713) [MMA02]</td>
+<td align=center><a href="index.html#downloads">668</a> (357) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1127</a> (179) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1799</a> (90) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2835</a> (45) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">3elt</a></td>
+<td align=center><a href="index.html#downloads">90</a> (2360) [JE]</td>
+<td align=center><a href="index.html#downloads">201</a> (1180) [JE]</td>
+<td align=center><a href="index.html#downloads">345</a> (590) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">573</a> (295) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">960</a> (148) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1532</a> (74) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">uk</a></td>
+<td align=center><a href="index.html#downloads">19</a> (2412) [IPMNE]</td>
+<td align=center><a href="index.html#downloads">41</a> (1206) [MMA01]</td>
+<td align=center><a href="index.html#downloads">82</a> (603) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">145</a> (302) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">246</a> (151) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">408</a> (76) [KaBaPE]</td>
+<tr><td align=center><a href="index.html#downloads">add32</a></td>
+<td align=center><a href="index.html#downloads">11</a> (2480) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">34</a> (1240) [FF]</td>
+<td align=center><a href="index.html#downloads">67</a> (620) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">118</a> (310) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">213</a> (155) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">485</a> (78) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk33</a></td>
+<td align=center><a href="index.html#downloads">10171</a> (4369) [GCSVD]</td>
+<td align=center><a href="index.html#downloads">21717</a> (2185) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34437</a> (1093) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54680</a> (547) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">77410</a> (274) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">107179</a> (137) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">whitaker3</a></td>
+<td align=center><a href="index.html#downloads">127</a> (4900) [JE]</td>
+<td align=center><a href="index.html#downloads">381</a> (2450) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">656</a> (1225) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1085</a> (613) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1668</a> (307) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2484</a> (154) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">crack</a></td>
+<td align=center><a href="index.html#downloads">184</a> (5120) [JE]</td>
+<td align=center><a href="index.html#downloads">366</a> (2560) [MMA02]</td>
+<td align=center><a href="index.html#downloads">679</a> (1280) [MMA02]</td>
+<td align=center><a href="index.html#downloads">1088</a> (640) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1678</a> (320) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2535</a> (160) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">wing_nodal</a></td>
+<td align=center><a href="index.html#downloads">1707</a> (5469) [JE]</td>
+<td align=center><a href="index.html#downloads">3575</a> (2735) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5435</a> (1368) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">8331</a> (684) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">11760</a> (342) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">15769</a> (171) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_4elt2</a></td>
+<td align=center><a href="index.html#downloads">130</a> (5572) [MRSB]</td>
+<td align=center><a href="index.html#downloads">349</a> (2786) [JE]</td>
+<td align=center><a href="index.html#downloads">606</a> (1393) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">1007</a> (697) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1613</a> (349) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2471</a> (175) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">vibrobox</a></td>
+<td align=center><a href="index.html#downloads">10343</a> (6164) [JE]</td>
+<td align=center><a href="index.html#downloads">18976</a> (3082) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">24479</a> (1541) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">31848</a> (771) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">39380</a> (386) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">46568</a> (193) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk29</a></td>
+<td align=center><a href="index.html#downloads">2843</a> (6996) [mpM4.0]</td>
+<td align=center><a href="index.html#downloads">8035</a> (3498) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">13958</a> (1749) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">21900</a> (875) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">34700</a> (438) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">55241</a> (219) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">4elt</a></td>
+<td align=center><a href="index.html#downloads">139</a> (7803) [JE]</td>
+<td align=center><a href="index.html#downloads">326</a> (3902) [NW]</td>
+<td align=center><a href="index.html#downloads">545</a> (1951) [MMA01]</td>
+<td align=center><a href="index.html#downloads">933</a> (976) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">1551</a> (488) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2562</a> (244) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_sphere</a></td>
+<td align=center><a href="index.html#downloads">386</a> (8193) [JE]</td>
+<td align=center><a href="index.html#downloads">768</a> (4097) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1156</a> (2049) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1714</a> (1025) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2488</a> (513) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3543</a> (257) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">cti</a></td>
+<td align=center><a href="index.html#downloads">334</a> (8420) [JE]</td>
+<td align=center><a href="index.html#downloads">954</a> (4210) [MMA02]</td>
+<td align=center><a href="index.html#downloads">1788</a> (2105) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2792</a> (1053) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">4039</a> (527) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">5618</a> (264) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">memplus</a></td>
+<td align=center><a href="index.html#downloads">5499</a> (8879) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">9442</a> (4440) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">11710</a> (2220) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">12893</a> (1110) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">13947</a> (555) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">16188</a> (278) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">cs4</a></td>
+<td align=center><a href="index.html#downloads">369</a> (11250) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">932</a> (5625) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1440</a> (2813) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2075</a> (1407) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2907</a> (704) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">4025</a> (352) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk30</a></td>
+<td align=center><a href="index.html#downloads">6394</a> (14462) [JE]</td>
+<td align=center><a href="index.html#downloads">16651</a> (7231) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34846</a> (3616) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">70404</a> (1808) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">112846</a> (904) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">171088</a> (452) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk31</a></td>
+<td align=center><a href="index.html#downloads">2762</a> (17794) [PROBE]</td>
+<td align=center><a href="index.html#downloads">7351</a> (8897) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">13280</a> (4449) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">23852</a> (2225) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">37143</a> (1113) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">57354</a> (557) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_pwt</a></td>
+<td align=center><a href="index.html#downloads">340</a> (18260) [GrPart]</td>
+<td align=center><a href="index.html#downloads">705</a> (9130) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1447</a> (4565) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2830</a> (2283) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">5574</a> (1142) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">8177</a> (571) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk32</a></td>
+<td align=center><a href="index.html#downloads">4667</a> (22305) [JE]</td>
+<td align=center><a href="index.html#downloads">9311</a> (11153) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">20008</a> (5577) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">36247</a> (2789) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">60013</a> (1395) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">90778</a> (698) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_body</a></td>
+<td align=center><a href="index.html#downloads">262</a> (22544) [MQI]</td>
+<td align=center><a href="index.html#downloads">599</a> (11272) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1033</a> (5636) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1722</a> (2818) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2797</a> (1409) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">4728</a> (705) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">t60k</a></td>
+<td align=center><a href="index.html#downloads">79</a> (30003) [NW]</td>
+<td align=center><a href="index.html#downloads">209</a> (15002) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">456</a> (7501) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">812</a> (3751) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">1323</a> (1876) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2074</a> (938) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wing</a></td>
+<td align=center><a href="index.html#downloads">789</a> (31016) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1623</a> (15508) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2504</a> (7754) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">3859</a> (3877) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">5592</a> (1939) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">7622</a> (970) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">brack2</a></td>
+<td align=center><a href="index.html#downloads">731</a> (31316) [JE]</td>
+<td align=center><a href="index.html#downloads">3084</a> (15658) [MMA02]</td>
+<td align=center><a href="index.html#downloads">7140</a> (7829) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11569</a> (3915) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">17382</a> (1958) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25805</a> (979) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">finan512</a></td>
+<td align=center><a href="index.html#downloads">162</a> (37376) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">324</a> (18688) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">648</a> (9344) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">1296</a> (4672) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">2592</a> (2336) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">10560</a> (1168) [NW]</td>
+<tr><td align=center><a href="index.html#downloads">fe_tooth</a></td>
+<td align=center><a href="index.html#downloads">3816</a> (39068) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">6888</a> (19534) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">11414</a> (9767) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">17352</a> (4884) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">24879</a> (2442) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">34234</a> (1221) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_rotor</a></td>
+<td align=center><a href="index.html#downloads">2098</a> (49809) [PROBE]</td>
+<td align=center><a href="index.html#downloads">7222</a> (24905) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">12838</a> (12453) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">20386</a> (6227) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">31132</a> (3114) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">45677</a> (1557) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">598a</a></td>
+<td align=center><a href="index.html#downloads">2398</a> (55486) [PROBE]</td>
+<td align=center><a href="index.html#downloads">8001</a> (27743) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">15921</a> (13872) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25694</a> (6936) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">38576</a> (3468) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">56094</a> (1734) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_ocean</a></td>
+<td align=center><a href="index.html#downloads">464</a> (71719) [PROBE]</td>
+<td align=center><a href="index.html#downloads">1882</a> (35860) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">4188</a> (17930) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">7713</a> (8965) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">12667</a> (4483) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">20061</a> (2242) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">144</a></td>
+<td align=center><a href="index.html#downloads">6486</a> (72325) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">15194</a> (36163) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25273</a> (18082) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">37563</a> (9041) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">55467</a> (4521) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">77391</a> (2261) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wave</a></td>
+<td align=center><a href="index.html#downloads">8677</a> (78159) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">17193</a> (39080) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">29188</a> (19540) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">42636</a> (9770) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">61100</a> (4885) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">83987</a> (2443) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">m14b</a></td>
+<td align=center><a href="index.html#downloads">3836</a> (107383) [MQI]</td>
+<td align=center><a href="index.html#downloads">13061</a> (53692) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25834</a> (26846) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">42142</a> (13423) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">65469</a> (6712) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">96446</a> (3356) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">auto</a></td>
+<td align=center><a href="index.html#downloads">10101</a> (224348) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">27092</a> (112174) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">45991</a> (56087) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">77370</a> (28044) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">121911</a> (14022) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">172966</a> (7011) [*+ILP]</td>
+</table>
+<p align=center><small><a href=.>Back to top</a></small></p>
+<hr>
+<a name=1></a><h2>Results with up to 1% imbalance<br>
+S_max <= 1.01 x S_opt</h2>
+<table border><tr><th>graph</th>
+<th>2</th>
+<th>4</th>
+<th>8</th>
+<th>16</th>
+<th>32</th>
+<th>64</th>
+<tr><td align=center><a href="index.html#downloads">add20</a></td>
+<td align=center><a href="index.html#downloads">585</a> (1209) [HYPAL]</td>
+<td align=center><a href="index.html#downloads">1147</a> (604) [HYPAL]</td>
+<td align=center><a href="index.html#downloads">1678</a> (300) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2040</a> (150) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2356</a> (75) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">2940</a> (38) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">data</a></td>
+<td align=center><a href="index.html#downloads">188</a> (1438) [AMG]</td>
+<td align=center><a href="index.html#downloads">376</a> (720) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">656</a> (360) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1121</a> (180) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1799</a> (90) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2835</a> (45) [MAHMBCDP]</td>
+<tr><td align=center><a href="index.html#downloads">3elt</a></td>
+<td align=center><a href="index.html#downloads">89</a> (2382) [GrPart]</td>
+<td align=center><a href="index.html#downloads">199</a> (1185) [NW]</td>
+<td align=center><a href="index.html#downloads">340</a> (595) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">568</a> (297) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">953</a> (149) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1532</a> (74) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">uk</a></td>
+<td align=center><a href="index.html#downloads">19</a> (2412) [IPMNE]</td>
+<td align=center><a href="index.html#downloads">40</a> (1215) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">80</a> (607) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">142</a> (305) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">246</a> (151) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">408</a> (76) [KaBaPE]</td>
+<tr><td align=center><a href="index.html#downloads">add32</a></td>
+<td align=center><a href="index.html#downloads">10</a> (2481) [J2.2]</td>
+<td align=center><a href="index.html#downloads">33</a> (1241) [JE]</td>
+<td align=center><a href="index.html#downloads">66</a> (621) [FF]</td>
+<td align=center><a href="index.html#downloads">117</a> (311) [JE]</td>
+<td align=center><a href="index.html#downloads">212</a> (156) [JE]</td>
+<td align=center><a href="index.html#downloads">485</a> (78) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk33</a></td>
+<td align=center><a href="index.html#downloads">10097</a> (4412) [FF]</td>
+<td align=center><a href="index.html#downloads">21338</a> (2206) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34175</a> (1103) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54505</a> (552) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">77195</a> (276) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">106902</a> (138) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">whitaker3</a></td>
+<td align=center><a href="index.html#downloads">126</a> (4908) [JE]</td>
+<td align=center><a href="index.html#downloads">380</a> (2454) [NW]</td>
+<td align=center><a href="index.html#downloads">654</a> (1237) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1083</a> (619) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1664</a> (310) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2480</a> (155) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">crack</a></td>
+<td align=center><a href="index.html#downloads">183</a> (5137) [NW]</td>
+<td align=center><a href="index.html#downloads">362</a> (2581) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">676</a> (1291) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1081</a> (646) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1669</a> (323) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2523</a> (161) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">wing_nodal</a></td>
+<td align=center><a href="index.html#downloads">1695</a> (5520) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">3559</a> (2762) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5401</a> (1381) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">8302</a> (690) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11731</a> (345) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15734</a> (172) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_4elt2</a></td>
+<td align=center><a href="index.html#downloads">130</a> (5572) [MRSB]</td>
+<td align=center><a href="index.html#downloads">349</a> (2786) [JE]</td>
+<td align=center><a href="index.html#downloads">603</a> (1406) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1000</a> (703) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1608</a> (352) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2470</a> (176) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">vibrobox</a></td>
+<td align=center><a href="index.html#downloads">10310</a> (6184) [JE]</td>
+<td align=center><a href="index.html#downloads">18943</a> (3112) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">24422</a> (1556) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">31710</a> (778) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">39380</a> (386) [MAHMBCDP]</td>
+<td align=center><a href="index.html#downloads">46529</a> (194) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk29</a></td>
+<td align=center><a href="index.html#downloads">2818</a> (7008) [GrPart]</td>
+<td align=center><a href="index.html#downloads">8029</a> (3528) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">13891</a> (1764) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">21694</a> (882) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34606</a> (442) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54950</a> (221) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">4elt</a></td>
+<td align=center><a href="index.html#downloads">138</a> (7844) [GrPart]</td>
+<td align=center><a href="index.html#downloads">320</a> (3939) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">532</a> (1970) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">927</a> (984) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1535</a> (492) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2546</a> (246) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_sphere</a></td>
+<td align=center><a href="index.html#downloads">386</a> (8193) [JE]</td>
+<td align=center><a href="index.html#downloads">766</a> (4130) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">1152</a> (2060) [JE]</td>
+<td align=center><a href="index.html#downloads">1708</a> (1034) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2479</a> (518) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3534</a> (259) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">cti</a></td>
+<td align=center><a href="index.html#downloads">318</a> (8480) [JE]</td>
+<td align=center><a href="index.html#downloads">944</a> (4248) [NW]</td>
+<td align=center><a href="index.html#downloads">1746</a> (2126) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2759</a> (1063) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3993</a> (532) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5594</a> (266) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">memplus</a></td>
+<td align=center><a href="index.html#downloads">5452</a> (8967) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">9385</a> (4484) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">11672</a> (2242) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">12873</a> (1121) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">13931</a> (560) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">16091</a> (280) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">cs4</a></td>
+<td align=center><a href="index.html#downloads">366</a> (11325) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">925</a> (5674) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1434</a> (2837) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2061</a> (1421) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2903</a> (711) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">3981</a> (355) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk30</a></td>
+<td align=center><a href="index.html#downloads">6335</a> (14603) [GrPart]</td>
+<td align=center><a href="index.html#downloads">16583</a> (7303) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34565</a> (3652) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">69912</a> (1826) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">112365</a> (913) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">170059</a> (456) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk31</a></td>
+<td align=center><a href="index.html#downloads">2699</a> (17970) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">7272</a> (8985) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">13134</a> (4493) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">23333</a> (2247) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">37057</a> (1124) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">57000</a> (562) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_pwt</a></td>
+<td align=center><a href="index.html#downloads">340</a> (18260) [GrPart]</td>
+<td align=center><a href="index.html#downloads">704</a> (9190) [KasPar]</td>
+<td align=center><a href="index.html#downloads">1432</a> (4610) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2797</a> (2304) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5514</a> (1153) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">8128</a> (576) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk32</a></td>
+<td align=center><a href="index.html#downloads">4667</a> (22305) [JE]</td>
+<td align=center><a href="index.html#downloads">9180</a> (11264) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">19612</a> (5632) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">35467</a> (2815) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">59501</a> (1408) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">89893</a> (704) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_body</a></td>
+<td align=center><a href="index.html#downloads">262</a> (22544) [MQI]</td>
+<td align=center><a href="index.html#downloads">598</a> (11274) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1023</a> (5692) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1714</a> (2834) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2748</a> (1423) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">4664</a> (712) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">t60k</a></td>
+<td align=center><a href="index.html#downloads">75</a> (30288) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">208</a> (15067) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">454</a> (7564) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">805</a> (3786) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1313</a> (1894) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2062</a> (947) [KaBaPE]</td>
+<tr><td align=center><a href="index.html#downloads">wing</a></td>
+<td align=center><a href="index.html#downloads">784</a> (31320) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1610</a> (15609) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2474</a> (7828) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">3844</a> (3901) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">5576</a> (1958) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">7585</a> (979) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">brack2</a></td>
+<td align=center><a href="index.html#downloads">708</a> (31614) [GrPart]</td>
+<td align=center><a href="index.html#downloads">3013</a> (15813) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">7029</a> (7907) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11492</a> (3954) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">17120</a> (1977) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25604</a> (988) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">finan512</a></td>
+<td align=center><a href="index.html#downloads">162</a> (37376) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">324</a> (18688) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">648</a> (9344) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">1296</a> (4672) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">2592</a> (2336) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">10560</a> (1168) [NW]</td>
+<tr><td align=center><a href="index.html#downloads">fe_tooth</a></td>
+<td align=center><a href="index.html#downloads">3814</a> (39455) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">6843</a> (19724) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">11358</a> (9864) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">17236</a> (4932) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">24799</a> (2466) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">34159</a> (1233) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_rotor</a></td>
+<td align=center><a href="index.html#downloads">2031</a> (50306) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">7158</a> (25150) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">12616</a> (12576) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">20146</a> (6289) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">30975</a> (3145) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">45304</a> (1572) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">598a</a></td>
+<td align=center><a href="index.html#downloads">2388</a> (55856) [MQI]</td>
+<td align=center><a href="index.html#downloads">7948</a> (28017) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">15831</a> (14007) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">25620</a> (7005) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">38410</a> (3502) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">55867</a> (1751) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_ocean</a></td>
+<td align=center><a href="index.html#downloads">385</a> (72436) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">1813</a> (36217) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">4060</a> (18108) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">7616</a> (9054) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">12523</a> (4527) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">19851</a> (2264) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">144</a></td>
+<td align=center><a href="index.html#downloads">6476</a> (73039) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15140</a> (36451) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">25157</a> (18262) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">37341</a> (9131) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">55258</a> (4566) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">76964</a> (2283) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wave</a></td>
+<td align=center><a href="index.html#downloads">8656</a> (78913) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">16745</a> (39470) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">28749</a> (19735) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">42349</a> (9867) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">60617</a> (4933) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">83451</a> (2467) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">m14b</a></td>
+<td align=center><a href="index.html#downloads">3826</a> (107831) [MQI]</td>
+<td align=center><a href="index.html#downloads">12973</a> (54228) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">25611</a> (27113) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">41920</a> (13556) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">64684</a> (6779) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">96145</a> (3389) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">auto</a></td>
+<td align=center><a href="index.html#downloads">9949</a> (226588) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">26611</a> (113295) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">45424</a> (56647) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">76533</a> (28324) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">120470</a> (14162) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">171866</a> (7081) [*+ILP]</td>
+</table>
+<p align=center><small><a href=.>Back to top</a></small></p>
+<hr>
+<a name=3></a><h2>Results with up to 3% imbalance<br>
+S_max <= 1.03 x S_opt</h2>
+<table border><tr><th>graph</th>
+<th>2</th>
+<th>4</th>
+<th>8</th>
+<th>16</th>
+<th>32</th>
+<th>64</th>
+<tr><td align=center><a href="index.html#downloads">add20</a></td>
+<td align=center><a href="index.html#downloads">560</a> (1233) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1134</a> (616) [HYPAL]</td>
+<td align=center><a href="index.html#downloads">1664</a> (309) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2030</a> (154) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2346</a> (77) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2920</a> (39) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">data</a></td>
+<td align=center><a href="index.html#downloads">185</a> (1460) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">369</a> (734) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">638</a> (367) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1088</a> (184) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1768</a> (92) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2781</a> (46) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">3elt</a></td>
+<td align=center><a href="index.html#downloads">87</a> (2398) [JE]</td>
+<td align=center><a href="index.html#downloads">198</a> (1213) [NW]</td>
+<td align=center><a href="index.html#downloads">334</a> (607) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">561</a> (303) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">944</a> (152) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1512</a> (76) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">uk</a></td>
+<td align=center><a href="index.html#downloads">18</a> (2455) [JE]</td>
+<td align=center><a href="index.html#downloads">39</a> (1238) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">77</a> (620) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">139</a> (310) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">239</a> (155) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">397</a> (78) [KaBaPE]</td>
+<tr><td align=center><a href="index.html#downloads">add32</a></td>
+<td align=center><a href="index.html#downloads">10</a> (2481) [J2.2]</td>
+<td align=center><a href="index.html#downloads">33</a> (1241) [JE]</td>
+<td align=center><a href="index.html#downloads">66</a> (621) [FF]</td>
+<td align=center><a href="index.html#downloads">117</a> (311) [JE]</td>
+<td align=center><a href="index.html#downloads">212</a> (156) [JE]</td>
+<td align=center><a href="index.html#downloads">471</a> (80) [KaBaPE+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk33</a></td>
+<td align=center><a href="index.html#downloads">10064</a> (4419) [AMG]</td>
+<td align=center><a href="index.html#downloads">20762</a> (2250) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34065</a> (1125) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54354</a> (563) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">76749</a> (282) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">105737</a> (141) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">whitaker3</a></td>
+<td align=center><a href="index.html#downloads">126</a> (4908) [JE]</td>
+<td align=center><a href="index.html#downloads">378</a> (2510) [NW]</td>
+<td align=center><a href="index.html#downloads">649</a> (1261) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1073</a> (631) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1647</a> (316) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2456</a> (158) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">crack</a></td>
+<td align=center><a href="index.html#downloads">182</a> (5187) [NW]</td>
+<td align=center><a href="index.html#downloads">360</a> (2606) [NW]</td>
+<td align=center><a href="index.html#downloads">671</a> (1317) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1070</a> (659) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1655</a> (329) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2487</a> (164) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wing_nodal</a></td>
+<td align=center><a href="index.html#downloads">1678</a> (5631) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3534</a> (2816) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5360</a> (1408) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">8244</a> (704) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11630</a> (352) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15612</a> (176) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_4elt2</a></td>
+<td align=center><a href="index.html#downloads">130</a> (5572) [MRSB]</td>
+<td align=center><a href="index.html#downloads">341</a> (2863) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">594</a> (1434) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">990</a> (717) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1592</a> (359) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2431</a> (180) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">vibrobox</a></td>
+<td align=center><a href="index.html#downloads">10310</a> (6184) [JE]</td>
+<td align=center><a href="index.html#downloads">18736</a> (3174) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">24153</a> (1587) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">31440</a> (794) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">39197</a> (397) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">46231</a> (198) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk29</a></td>
+<td align=center><a href="index.html#downloads">2818</a> (7008) [GrPart]</td>
+<td align=center><a href="index.html#downloads">7971</a> (3600) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">13710</a> (1801) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">21258</a> (901) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">33807</a> (451) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54382</a> (225) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">4elt</a></td>
+<td align=center><a href="index.html#downloads">137</a> (8003) [NW]</td>
+<td align=center><a href="index.html#downloads">319</a> (3951) [NW]</td>
+<td align=center><a href="index.html#downloads">522</a> (2009) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">901</a> (1005) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1519</a> (502) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2512</a> (251) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">fe_sphere</a></td>
+<td align=center><a href="index.html#downloads">384</a> (8289) [JE]</td>
+<td align=center><a href="index.html#downloads">764</a> (4194) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1152</a> (2060) [JE]</td>
+<td align=center><a href="index.html#downloads">1696</a> (1055) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2459</a> (528) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3503</a> (264) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">cti</a></td>
+<td align=center><a href="index.html#downloads">318</a> (8480) [JE]</td>
+<td align=center><a href="index.html#downloads">916</a> (4336) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">1714</a> (2164) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">2727</a> (1084) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">3941</a> (540) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5522</a> (271) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">memplus</a></td>
+<td align=center><a href="index.html#downloads">5352</a> (9145) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">9309</a> (4573) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">11584</a> (2286) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">12834</a> (1143) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">13887</a> (571) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15950</a> (286) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">cs4</a></td>
+<td align=center><a href="index.html#downloads">360</a> (11544) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">917</a> (5790) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1423</a> (2897) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2043</a> (1449) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2861</a> (723) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">3979</a> (362) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk30</a></td>
+<td align=center><a href="index.html#downloads">6251</a> (14679) [JE]</td>
+<td align=center><a href="index.html#downloads">16372</a> (7447) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">34137</a> (3715) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">69357</a> (1862) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">110334</a> (931) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">168271</a> (465) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk31</a></td>
+<td align=center><a href="index.html#downloads">2676</a> (18086) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">7148</a> (9163) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">12962</a> (4582) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">22949</a> (2291) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">36567</a> (1146) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">56025</a> (573) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_pwt</a></td>
+<td align=center><a href="index.html#downloads">340</a> (18260) [GrPart]</td>
+<td align=center><a href="index.html#downloads">700</a> (9370) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1410</a> (4700) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">2754</a> (2351) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5403</a> (1176) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">8036</a> (588) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk32</a></td>
+<td align=center><a href="index.html#downloads">4667</a> (22305) [JE]</td>
+<td align=center><a href="index.html#downloads">8725</a> (11487) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">19395</a> (5744) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">34662</a> (2872) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">58060</a> (1436) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">89478</a> (718) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_body</a></td>
+<td align=center><a href="index.html#downloads">262</a> (22544) [MQI]</td>
+<td align=center><a href="index.html#downloads">598</a> (11274) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1016</a> (5787) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1693</a> (2902) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2698</a> (1448) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">4522</a> (726) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">t60k</a></td>
+<td align=center><a href="index.html#downloads">71</a> (30744) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">203</a> (15372) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">449</a> (7635) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">792</a> (3862) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1302</a> (1932) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">2034</a> (966) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wing</a></td>
+<td align=center><a href="index.html#downloads">773</a> (31928) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1593</a> (15956) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2449</a> (7985) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">3783</a> (3993) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">5502</a> (1996) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">7560</a> (997) [*+IPMNE2]</td>
+<tr><td align=center><a href="index.html#downloads">brack2</a></td>
+<td align=center><a href="index.html#downloads">684</a> (32168) [JE]</td>
+<td align=center><a href="index.html#downloads">2834</a> (16126) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">6778</a> (8063) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11253</a> (4032) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">16981</a> (2016) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25362</a> (1008) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">finan512</a></td>
+<td align=center><a href="index.html#downloads">162</a> (37376) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">324</a> (18688) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">648</a> (9344) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">1296</a> (4672) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">2592</a> (2336) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">10560</a> (1168) [NW]</td>
+<tr><td align=center><a href="index.html#downloads">fe_tooth</a></td>
+<td align=center><a href="index.html#downloads">3788</a> (40233) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">6756</a> (20120) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">11241</a> (10060) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">17107</a> (5030) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">24623</a> (2515) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">33779</a> (1257) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_rotor</a></td>
+<td align=center><a href="index.html#downloads">1959</a> (51044) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">7049</a> (25652) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">12445</a> (12824) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">19863</a> (6413) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">30579</a> (3207) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">44811</a> (1603) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">598a</a></td>
+<td align=center><a href="index.html#downloads">2367</a> (56705) [MQI]</td>
+<td align=center><a href="index.html#downloads">7816</a> (28573) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">15613</a> (14287) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">25379</a> (7144) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">38093</a> (3572) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">55358</a> (1786) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_ocean</a></td>
+<td align=center><a href="index.html#downloads">311</a> (73322) [GrPart]</td>
+<td align=center><a href="index.html#downloads">1693</a> (36802) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3920</a> (18449) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">7405</a> (9233) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">12283</a> (4617) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">19518</a> (2309) [*+IPMNE2]</td>
+<tr><td align=center><a href="index.html#downloads">144</a></td>
+<td align=center><a href="index.html#downloads">6430</a> (74494) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15064</a> (37244) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">24901</a> (18624) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">36999</a> (9312) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">54800</a> (4656) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">76548</a> (2328) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wave</a></td>
+<td align=center><a href="index.html#downloads">8591</a> (80502) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">16633</a> (40252) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">28494</a> (20126) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">42139</a> (10063) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">60334</a> (5031) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">82809</a> (2516) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">m14b</a></td>
+<td align=center><a href="index.html#downloads">3823</a> (108879) [MQI]</td>
+<td align=center><a href="index.html#downloads">12948</a> (54847) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">25390</a> (27650) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">41778</a> (13823) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">64354</a> (6913) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">95575</a> (3456) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">auto</a></td>
+<td align=center><a href="index.html#downloads">9673</a> (231074) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">25789</a> (115538) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">44724</a> (57769) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">75665</a> (28885) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">119131</a> (14442) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">170295</a> (7221) [*+ILP]</td>
+</table>
+<p align=center><small><a href=.>Back to top</a></small></p>
+<hr>
+<a name=5></a><h2>Results with up to 5% imbalance<br>
+S_max <= 1.05 x S_opt</h2>
+<table border><tr><th>graph</th>
+<th>2</th>
+<th>4</th>
+<th>8</th>
+<th>16</th>
+<th>32</th>
+<th>64</th>
+<tr><td align=center><a href="index.html#downloads">add20</a></td>
+<td align=center><a href="index.html#downloads">536</a> (1256) [IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1120</a> (628) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1651</a> (315) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2024</a> (157) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2341</a> (78) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2920</a> (39) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">data</a></td>
+<td align=center><a href="index.html#downloads">181</a> (1497) [SDP]</td>
+<td align=center><a href="index.html#downloads">363</a> (745) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">628</a> (374) [NW]</td>
+<td align=center><a href="index.html#downloads">1076</a> (187) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1743</a> (94) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2747</a> (47) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">3elt</a></td>
+<td align=center><a href="index.html#downloads">87</a> (2398) [JE]</td>
+<td align=center><a href="index.html#downloads">197</a> (1237) [NW]</td>
+<td align=center><a href="index.html#downloads">329</a> (619) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">557</a> (309) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">930</a> (155) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1498</a> (77) [KaBaPET]</td>
+<tr><td align=center><a href="index.html#downloads">uk</a></td>
+<td align=center><a href="index.html#downloads">18</a> (2455) [JE]</td>
+<td align=center><a href="index.html#downloads">38</a> (1258) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">75</a> (633) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">137</a> (315) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">235</a> (158) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">392</a> (79) [KaBaPE+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">add32</a></td>
+<td align=center><a href="index.html#downloads">10</a> (2481) [J2.2]</td>
+<td align=center><a href="index.html#downloads">33</a> (1241) [JE]</td>
+<td align=center><a href="index.html#downloads">63</a> (650) [KasPar]</td>
+<td align=center><a href="index.html#downloads">117</a> (311) [JE]</td>
+<td align=center><a href="index.html#downloads">212</a> (156) [JE]</td>
+<td align=center><a href="index.html#downloads">471</a> (81) [KaBaPE+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk33</a></td>
+<td align=center><a href="index.html#downloads">9914</a> (4554) [iJ]</td>
+<td align=center><a href="index.html#downloads">20158</a> (2294) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">33908</a> (1147) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">54119</a> (574) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">76070</a> (287) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">105297</a> (143) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">whitaker3</a></td>
+<td align=center><a href="index.html#downloads">126</a> (4908) [JE]</td>
+<td align=center><a href="index.html#downloads">376</a> (2546) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">644</a> (1283) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1068</a> (643) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">1632</a> (322) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2425</a> (161) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">crack</a></td>
+<td align=center><a href="index.html#downloads">182</a> (5187) [NW]</td>
+<td align=center><a href="index.html#downloads">360</a> (2606) [NW]</td>
+<td align=center><a href="index.html#downloads">666</a> (1342) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1062</a> (671) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">1641</a> (336) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2470</a> (168) [KaBaPE+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wing_nodal</a></td>
+<td align=center><a href="index.html#downloads">1668</a> (5742) [SDP]</td>
+<td align=center><a href="index.html#downloads">3520</a> (2869) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5339</a> (1436) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">8160</a> (718) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">11533</a> (359) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15514</a> (179) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_4elt2</a></td>
+<td align=center><a href="index.html#downloads">130</a> (5572) [MRSB]</td>
+<td align=center><a href="index.html#downloads">335</a> (2918) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">578</a> (1462) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">979</a> (731) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1566</a> (366) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2406</a> (183) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">vibrobox</a></td>
+<td align=center><a href="index.html#downloads">10310</a> (6184) [JE]</td>
+<td align=center><a href="index.html#downloads">18690</a> (3235) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">23924</a> (1618) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">31216</a> (809) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">38823</a> (405) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">45987</a> (202) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk29</a></td>
+<td align=center><a href="index.html#downloads">2818</a> (7008) [GrPart]</td>
+<td align=center><a href="index.html#downloads">7925</a> (3672) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">13540</a> (1830) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">20924</a> (918) [NW]</td>
+<td align=center><a href="index.html#downloads">33450</a> (459) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">53703</a> (229) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">4elt</a></td>
+<td align=center><a href="index.html#downloads">137</a> (8003) [NW]</td>
+<td align=center><a href="index.html#downloads">315</a> (4090) [NW]</td>
+<td align=center><a href="index.html#downloads">515</a> (2047) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">887</a> (1024) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1493</a> (512) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">2478</a> (256) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_sphere</a></td>
+<td align=center><a href="index.html#downloads">384</a> (8289) [JE]</td>
+<td align=center><a href="index.html#downloads">762</a> (4257) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1152</a> (2060) [JE]</td>
+<td align=center><a href="index.html#downloads">1678</a> (1076) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2427</a> (536) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">3456</a> (269) [FSMAGP]</td>
+<tr><td align=center><a href="index.html#downloads">cti</a></td>
+<td align=center><a href="index.html#downloads">318</a> (8480) [JE]</td>
+<td align=center><a href="index.html#downloads">889</a> (4416) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">1684</a> (2200) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">2701</a> (1101) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">3904</a> (553) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5460</a> (277) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">memplus</a></td>
+<td align=center><a href="index.html#downloads">5253</a> (9322) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">9246</a> (4661) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">11510</a> (2329) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">12799</a> (1165) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">13857</a> (582) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15875</a> (291) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">cs4</a></td>
+<td align=center><a href="index.html#downloads">353</a> (11811) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">908</a> (5906) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">1420</a> (2946) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">2042</a> (1477) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2845</a> (738) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">3949</a> (368) [KaBaPE+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk30</a></td>
+<td align=center><a href="index.html#downloads">6251</a> (14679) [JE]</td>
+<td align=center><a href="index.html#downloads">16165</a> (7590) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">34068</a> (3796) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">68323</a> (1898) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">109368</a> (949) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">166787</a> (474) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk31</a></td>
+<td align=center><a href="index.html#downloads">2660</a> (18683) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">7065</a> (9341) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">12823</a> (4669) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">22626</a> (2336) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">36339</a> (1168) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">55250</a> (584) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_pwt</a></td>
+<td align=center><a href="index.html#downloads">340</a> (18260) [GrPart]</td>
+<td align=center><a href="index.html#downloads">700</a> (9370) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">1405</a> (4744) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">2737</a> (2396) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">5305</a> (1199) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">7956</a> (599) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">bcsstk32</a></td>
+<td align=center><a href="index.html#downloads">4622</a> (23319) [KasPar]</td>
+<td align=center><a href="index.html#downloads">8441</a> (11706) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">18955</a> (5855) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">34163</a> (2928) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">57529</a> (1464) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">88595</a> (732) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_body</a></td>
+<td align=center><a href="index.html#downloads">262</a> (22544) [MQI]</td>
+<td align=center><a href="index.html#downloads">588</a> (11835) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1012</a> (5916) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">1682</a> (2954) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">2677</a> (1479) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">4475</a> (740) [KaHyPar-E]</td>
+<tr><td align=center><a href="index.html#downloads">t60k</a></td>
+<td align=center><a href="index.html#downloads">65</a> (31437) [SDP]</td>
+<td align=center><a href="index.html#downloads">195</a> (15719) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">441</a> (7874) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">784</a> (3930) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">1289</a> (1969) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2013</a> (984) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wing</a></td>
+<td align=center><a href="index.html#downloads">770</a> (32511) [*+KFFP]</td>
+<td align=center><a href="index.html#downloads">1589</a> (16270) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">2440</a> (8114) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">3761</a> (4069) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">5464</a> (2034) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">7455</a> (1018) [KaHyPar-E]</td>
+<tr><td align=center><a href="index.html#downloads">brack2</a></td>
+<td align=center><a href="index.html#downloads">660</a> (32600) [SDP]</td>
+<td align=center><a href="index.html#downloads">2731</a> (16438) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">6592</a> (8219) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">11046</a> (4110) [KaBaPE+ILP]</td>
+<td align=center><a href="index.html#downloads">16765</a> (2055) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">25100</a> (1027) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">finan512</a></td>
+<td align=center><a href="index.html#downloads">162</a> (37376) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">324</a> (18688) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">648</a> (9344) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">1296</a> (4672) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">2592</a> (2336) [Ch2.0]</td>
+<td align=center><a href="index.html#downloads">10560</a> (1168) [NW]</td>
+<tr><td align=center><a href="index.html#downloads">fe_tooth</a></td>
+<td align=center><a href="index.html#downloads">3773</a> (40567) [SDP]</td>
+<td align=center><a href="index.html#downloads">6687</a> (20508) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">11147</a> (10255) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">16983</a> (5128) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">24270</a> (2564) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">33387</a> (1282) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_rotor</a></td>
+<td align=center><a href="index.html#downloads">1940</a> (52284) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">6779</a> (26150) [KaBaPET]</td>
+<td align=center><a href="index.html#downloads">12308</a> (13074) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">19677</a> (6538) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">30346</a> (3269) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">44368</a> (1634) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">598a</a></td>
+<td align=center><a href="index.html#downloads">2336</a> (57855) [MQI]</td>
+<td align=center><a href="index.html#downloads">7722</a> (29130) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">15413</a> (14565) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">25198</a> (7282) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">37632</a> (3641) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">54677</a> (1820) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">fe_ocean</a></td>
+<td align=center><a href="index.html#downloads">311</a> (73322) [GrPart]</td>
+<td align=center><a href="index.html#downloads">1686</a> (37274) [KaFFPa]</td>
+<td align=center><a href="index.html#downloads">3886</a> (18811) [KaBaPE]</td>
+<td align=center><a href="index.html#downloads">7338</a> (9413) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">12033</a> (4707) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">19391</a> (2353) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">144</a></td>
+<td align=center><a href="index.html#downloads">6345</a> (75941) [FSMAGP]</td>
+<td align=center><a href="index.html#downloads">14978</a> (37971) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">24174</a> (18986) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">36607</a> (9493) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">54160</a> (4747) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">75753</a> (2374) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">wave</a></td>
+<td align=center><a href="index.html#downloads">8524</a> (82064) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">16528</a> (41006) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">28489</a> (20183) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">42024</a> (10258) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">59608</a> (5129) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">81989</a> (2565) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">m14b</a></td>
+<td align=center><a href="index.html#downloads">3802</a> (112532) [MQI]</td>
+<td align=center><a href="index.html#downloads">12858</a> (56374) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">25126</a> (28182) [*+IPMNE2]</td>
+<td align=center><a href="index.html#downloads">41097</a> (14094) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">63397</a> (7047) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">94123</a> (3523) [*+ILP]</td>
+<tr><td align=center><a href="index.html#downloads">auto</a></td>
+<td align=center><a href="index.html#downloads">9450</a> (235532) [MQI]</td>
+<td align=center><a href="index.html#downloads">25258</a> (117735) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">44206</a> (58891) [KaFFPaE]</td>
+<td align=center><a href="index.html#downloads">74266</a> (29446) [*+ILP]</td>
+<td align=center><a href="index.html#downloads">118548</a> (14722) [KaHyPar-E]</td>
+<td align=center><a href="index.html#downloads">169260</a> (7361) [*+ILP]</td>
+</table>
+<p align=center><small><a href=.>Back to top</a></small></p>
+
+<hr>
+
+<p>
+<small>
+&copy;
+<script type="text/javascript">
+document.write(writemail('c.walshaw', 'gre.ac', 'uk', 'Chris Walshaw'))
+</script>
+<noscript>
+Chris Walshaw
+</noscript>
+</small>
+</p>
+
+</td>
+</tr>
+</table>
+
+<script type="text/JavaScript" src="/js/chwjavascript-tail.js"></script>
+
+</body>
+</html>
